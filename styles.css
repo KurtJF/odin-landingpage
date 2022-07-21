@@ -87,7 +87,6 @@ video {
   vertical-align: baseline;
 }
 /* START */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -105,6 +104,7 @@ header {
   font-weight: 600;
   font-size: 24px;
   color: #f9faf8;
+  margin: 0 40px;
 }
 
 header ul,
@@ -121,6 +121,10 @@ a {
   color: #e5e7eb;
 }
 
+.links {
+  margin: 0 40px;
+}
+
 li {
   display: flex;
   justify-content: flex-end;
@@ -131,7 +135,7 @@ li {
   justify-content: space-around;
   align-items: center;
   background-color: #1f2937;
-  padding: 80px 260px;
+  padding: 80px 200px;
 }
 
 .hero-image img {
@@ -140,14 +144,15 @@ li {
 }
 
 .hero-text {
-  max-width: 480px;
+  text-align: left;
+  max-width: 460px;
+  float: left;
 }
 
 h1 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   color: #f9faf8;
-  letter-spacing: -2px;
 }
 
 .hero-container p {
@@ -170,7 +175,7 @@ h1 {
 
 h2 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   color: #1f2937;
   text-align: center;
   margin-top: 40px;
@@ -179,9 +184,10 @@ h2 {
 .info-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 50px;
   padding: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -197,19 +203,32 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 200px;
+  max-width: 180px;
 }
 
-.quote-container {
+.card .text {
+  margin-top: 8px;
+}
+
+.review {
   background-color: #e5e7eb;
-  text-align: center;
+  padding: 140px 0;
+  text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
 .review-text {
-  max-width: 900px;
+  max-width: 780px;
   font-size: 36px;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 300;
+}
+
+.review-name {
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .action-container {
@@ -220,7 +239,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   background-color: #3382f6;
-  width: 1050px;
+  max-width: 900px;
   color: #f9faf8;
 }
 
